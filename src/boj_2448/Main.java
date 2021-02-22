@@ -22,7 +22,9 @@ public class Main {
 			Arrays.fill(rows, ' ');
 		}
 		
+		//N-1로 width를 줘야 행의 제일 왼쪽 인덱스 0부터 찍힘
 		recursive(0,N-1,N);
+		
 		for(int i=0;i<N;i++)
 		{
 			for(int j=0;j<N*2;j++)
