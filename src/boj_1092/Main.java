@@ -1,4 +1,4 @@
-package boj_1092;
+package boj_1092; // 크레인
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -52,11 +52,12 @@ public class Main {
 			return;
 		}
 		
-		while (box.size() != 0) { // 박스를 다 옮기면 종료
+		//박스를 옮기는 처리 -> 모든 크레인이 최대로 옮길 수 있는 박스를 찾는다.
+		while (box.size() != 0) { // 박스를 다 옮길 때 까지 반복
 			int idx = 0; // 크레인 인덱스
 			int temp = 0; // 박스 인덱스
 			while (idx < N) { // 모든 박스를 탐색
-				if (temp == box.size()) break;
+				if (temp == box.size()) break; // 현재 크레인의 박스를 못찾음
 				if (box.get(temp) <= crane.get(idx)) { // 박스를 옮길 수 있을 때
 					box.remove(temp);
 					idx++;
@@ -64,7 +65,7 @@ public class Main {
 					temp++;
 				}
 			}
-			result++;
+			result++; // 모든 크레인 한번 반복 한 후 결과값 1증가
 		}
 
 
