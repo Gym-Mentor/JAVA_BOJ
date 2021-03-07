@@ -1,4 +1,4 @@
-package boj_2023;
+package boj_2023; // 신기한 소수
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -11,7 +11,7 @@ public class Main {
 	static int N,MAX_NUM,result=0;
 	static StringBuilder sb;
 	public static void main(String[] args) throws IOException{
-		
+		//선언 
 		BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw= new BufferedWriter(new OutputStreamWriter(System.out));
 		sb=new StringBuilder();
