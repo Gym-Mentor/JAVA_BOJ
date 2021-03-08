@@ -1,5 +1,5 @@
 package boj_2661;
-
+// 좋은수열
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
