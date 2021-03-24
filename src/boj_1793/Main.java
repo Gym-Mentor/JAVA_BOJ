@@ -13,7 +13,7 @@ public class Main {
 		
 		BigInteger DP[]=new BigInteger [251];
 		
-		DP[0]=BigInteger.ZERO;
+		DP[0]=BigInteger.ONE;
 		DP[1]=BigInteger.ONE;
 		DP[2]=BigInteger.valueOf(3);
 		for(int i=3;i<=250;i++)
