@@ -28,6 +28,7 @@ public class Main {
 		if(check())
 		{
 			System.out.println("0");
+			return ;
 		}
 		comb(0,0,0); //cnt , y, x, 사다리개수
 		
