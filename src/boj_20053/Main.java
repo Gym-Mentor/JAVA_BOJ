@@ -3,11 +3,12 @@ package boj_20053;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class Main {
 
-	static int N,T,min=Integer.MAX_VALUE,max=Integer.MIN_VALUE;
+	static int N,T;
 	public static void main(String[] args) throws IOException{
 		BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
 		
@@ -15,15 +16,15 @@ public class Main {
 		
 		for(int tc=0;tc<T;tc++) {
 			N=Integer.parseInt(br.readLine());
-			
+			int[] nums=new int[N];
+			int idx=0;
 			StringTokenizer st= new StringTokenizer(br.readLine());
 			while(st.hasMoreTokens())
 			{
-				int num=Integer.parseInt(st.nextToken());
-				min=Math.min(min,num);
-				max=Math.max(max,num);
+				nums[idx++]=Integer.parseInt(st.nextToken());
 			}
-			System.out.println(min+" "+max);
+			Arrays.sort(nums);
+			System.out.println(nums[0]+" "+nums[N-1]);
 		}
 	}
 
