@@ -65,7 +65,7 @@ public class Main {
 			if(P1==P2)return true;
 			else 
 			{
-				parents[num2]=num1;
+				parents[P2]=P1;
 				return false;
 			}
 		}
