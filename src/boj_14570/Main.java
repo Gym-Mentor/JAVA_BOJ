@@ -7,7 +7,8 @@ import java.util.StringTokenizer;
 
 public class Main {
 
-	static int N,K;
+	static int N;
+	static long K;
 	static int[][] tree;
 	public static void main(String[] args) throws IOException{
 		BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
@@ -20,9 +21,9 @@ public class Main {
 			int num1=Integer.parseInt(st.nextToken());
 			int num2=Integer.parseInt(st.nextToken());
 			tree[i][0]=num1;
-			tree[i][1]=num1;
+			tree[i][1]=num2;
 		}
-		
+		K=Long.parseLong(br.readLine());
 		int pos=1;
 		while(true)
 		{
